@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/anyCategoryMenuItem"
+        android:title="Any"
+        android:visible="true"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/christmasCategoryMenuItem"
+        android:title="Christmas"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/programmingCategoryMenuItem"
+        android:title="Programming" />
+    <item
+        android:id="@+id/miscCategoryMenuItem"
+        android:title="Miscellaneous" />
+    <item
+        android:id="@+id/darkCategoryMenuItem"
+        android:title="Dark" />
+    <item
+        android:id="@+id/punCategoryMenuItem"
+        android:title="Pun" />
+    <item
+        android:id="@+id/spookyCategoryMenuItem"
+        android:title="Spooky" />
+</menu>

@@ -1,0 +1,116 @@
+#dialog {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 50;
+  transition: opacity 150ms ease-in-out;
+}
+
+#dialog-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+#dialog-content-container {
+  width: 500px;
+  height: 400px;
+  overflow: scroll;
+  padding-inline: 1rem;
+}
+
+#dialog-content {
+  margin: 0.5rem;
+}
+
+#meal-header {
+  display: grid;
+  gap: 0.25rem;
+  isolation: isolate;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 0.8rem;
+}
+
+#meal-header > * {
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+}
+
+#meal-image {
+  border: 1px solid black;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+#meal-info {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  padding: 0.25rem;
+  z-index: 1;
+  color: white;
+}
+
+#meal-name {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  display: inline-block;
+  text-decoration: underline dotted;
+}
+
+#meal-category {
+  text-transform: lowercase;
+  font-style: italic;
+  font-weight: 500;
+}
+
+#meal-instructions {
+  max-height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#dialog-content-container button {
+  --bg: black;
+  --text: white;
+  transition:
+    background-color 150ms ease-in-out,
+    color 150ms ease-in-out;
+  border-radius: 9999px;
+  max-height: 100%;
+  border: 1px solid var(--bg);
+  padding: 0.5rem;
+  color: var(--bg);
+}
+
+#dialog-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#dialog-content-container button:hover {
+  background: var(--bg);
+  color: var(--text);
+}
+
+#dialog-content-container button:focus-visible {
+  outline: 2px solid var(--bg);
+}
+
+#dialog-delete-button {
+  --bg: red !important;
+}

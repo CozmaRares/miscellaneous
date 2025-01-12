@@ -1,0 +1,16 @@
+services:
+  db:
+    build: .
+    container_name: dbd
+    environment:
+      POSTGRES_USER: raru
+      POSTGRES_PASSWORD: lmao
+      POSTGRES_DB: postgres
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+      - ./games:/home
+    ports:
+      - 5432:5432
+
+volumes:
+  pgdata:

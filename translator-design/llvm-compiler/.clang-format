@@ -1,0 +1,13 @@
+BasedOnStyle: Google
+IndentWidth: 4
+ColumnLimit: 0
+AllowShortCaseLabelsOnASingleLine: true
+Cpp11BracedListStyle: false
+EmptyLineBeforeAccessModifier: Always
+NamespaceIndentation: All
+SpaceBeforeParens: ControlStatements
+AllowShortLoopsOnASingleLine: true
+AlignConsecutiveMacros: AcrossEmptyLinesAndComments
+AlignConsecutiveAssignments:  Consecutive
+AllowShortIfStatementsOnASingleLine: Never
+AccessModifierOffset: -2
